@@ -23,7 +23,6 @@ const words = [
 
 const bodyContent = document.querySelector("body");
 const mainContent = document.querySelector("main");
-const preloaderContent = document.querySelector(".preloader");
 const loader = document.querySelector(".loader");
 let currentWordIndex = 0;
 
@@ -37,14 +36,24 @@ function changeWord() {
 		currentWordIndex++;
 		loader.textContent = ""; // Clear loader text
 		displayWord(currentWord);
-		setTimeout(changeWord, 280); // Wait for 300 ms before displaying the next word
+		setTimeout(changeWord, 200); // Wait for 300 ms before displaying the next word
 	} else {
 		// All words have been displayed, fade in the main content
-		mainContent.style.opacity = 1; // Make the main content visible
-		bodyContent.style.background = "#ffffff";
-		preloaderContent.style.display = "none"; // Hide the preloader
-		loader.style.display = "none"; // Hide the loader
+		gsap.to(".preloader", {
+			duration: .8,
+			swagger: .02,
+			height: "0vh",
+			ease: "Power2.easeIn"
+		}).to(
+			"body",
+			{
+				overflow: "auto"
+			},
+			"-=2"
+		).to(".preloader", {
+			display: "none"
+		});
 	}
 }
 
-setTimeout(changeWord, 800);
+setTimeout(changeWord, 500);
