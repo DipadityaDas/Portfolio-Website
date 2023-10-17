@@ -1,14 +1,14 @@
 * {
-	font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+	font-family: "Inter Tight", Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background-color: #000;
 }
 
 .loader {
@@ -17,7 +17,7 @@ body {
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-	color: beige;
+	color: #ffffff;
 }
 
 .preloader {
@@ -26,10 +26,11 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+	font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 	font-size: 2.5rem;
 	font-weight: 450;
 	pointer-events: none;
+	background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcd02);
 }
 
 main {
