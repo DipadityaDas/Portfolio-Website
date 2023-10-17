@@ -1,21 +1,30 @@
 const words = [
-	"hello", // English
-	"নমস্কার", // Bengali
-	"नमस्ते", // Hindi
-	"Hola", // Spanish
-	"안녕하세요", // Korean
-	"こんにちは", // Japanese
-	"Bonjour", // French
-	"Hallo", // German
-	"Ciao", // Italian
-	"Olá", // Portuguese
-	"Hallå", // Swedish
+	"hello",      // English
+	"নমস্কার",      // Bengali (Nomoskar)
+	"नमस्ते",       // Sanskrit (Namaste)
+	"Hola",       // Spanish
+	"안녕하세요",   // Korean
+	"こんにちは",   // Japanese
+	"నమస్కారం",   // Telugu (Namaskaram)
+	"नमस्कार",      // Marathi (Namaskār)
+	"வணக்கம்",   // Tamil (Vaṇakkam)
+	"નમસ્તે",       // Gujarati (Namaste)
+	"ನಮಸ್ಕಾರ",    // Kannada (Namaskāra)
+	"ନମସ୍କାର",      // Odia (Namaskāra)
+	"ਸਤ ਸ੍ਰੀ ਅਕਾਲ",  // Punjabi (Sat Srī Akāl)
+	"നമസ്കാരം",  // Malayalam (Namaskāram)
+	"নমস্কাৰ",      // Assamese (Nomoskar)
+	"Bonjour",   // French
+	"Hallo",     // German
+	"Ciao",      // Italian
+	"Olá",       // Portuguese
+	"Hallå",     // Swedish
 ];
 
-const loader = document.querySelector(".loader");
+const bodyContent = document.querySelector("body");
 const mainContent = document.querySelector("main");
-const bodyContent = document.querySelector("body")
-const preloaderContent = document.querySelector(".preloader")
+const preloaderContent = document.querySelector(".preloader");
+const loader = document.querySelector(".loader");
 let currentWordIndex = 0;
 
 function displayWord(word) {
@@ -28,12 +37,12 @@ function changeWord() {
 		currentWordIndex++;
 		loader.textContent = ""; // Clear loader text
 		displayWord(currentWord);
-		setTimeout(changeWord, 200); // Wait for 250 ms before displaying the next word
+		setTimeout(changeWord, 300); // Wait for 300 ms before displaying the next word
 	} else {
 		// All words have been displayed, fade in the main content
-		mainContent.style.opacity = 1;
+		mainContent.style.opacity = 1; // Make the main content visible
 		bodyContent.style.background = "#ffffff";
-		preloaderContent.style.display = "none";
+		preloaderContent.style.display = "none"; // Hide the preloader
 		loader.style.display = "none"; // Hide the loader
 	}
 }
