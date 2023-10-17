@@ -1,5 +1,5 @@
 const words = [
-	"hello",      // English
+	"Hello",      // English
 	"নমস্কার",      // Bengali (Nomoskar)
 	"नमस्ते",       // Sanskrit (Namaste)
 	"Hola",       // Spanish
@@ -37,7 +37,7 @@ function changeWord() {
 		currentWordIndex++;
 		loader.textContent = ""; // Clear loader text
 		displayWord(currentWord);
-		setTimeout(changeWord, 300); // Wait for 300 ms before displaying the next word
+		setTimeout(changeWord, 280); // Wait for 300 ms before displaying the next word
 	} else {
 		// All words have been displayed, fade in the main content
 		mainContent.style.opacity = 1; // Make the main content visible
@@ -47,4 +47,4 @@ function changeWord() {
 	}
 }
 
-setTimeout(changeWord, 1200);
+setTimeout(changeWord, 800);
