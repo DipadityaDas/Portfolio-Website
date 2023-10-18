@@ -43,7 +43,7 @@ function changeWord() {
 			duration: .8,
 			swagger: .02,
 			height: "0vh",
-			ease: "Power2.easeIn"
+			ease: "Power3.easeIn"
 		}).to(
 			"body",
 			{
