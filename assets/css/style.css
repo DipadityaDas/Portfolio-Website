@@ -26,7 +26,6 @@ body {
 	font-weight: 450;
 	position: relative;
 	overflow: hidden;
-
 }
 
 .preloader {
@@ -38,7 +37,6 @@ body {
 	left: 0;
 	right: 0;
 	pointer-events: none;
-	background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcd02);
+	background: linear-gradient(45deg, #d31f14, #ee4c03, #fc7621, #f08e09, #fac900, #e9da00);
 	overflow: hidden;
 }
-

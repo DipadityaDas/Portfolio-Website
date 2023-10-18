@@ -33,7 +33,7 @@ function changeWord() {
 		currentWordIndex++;
 		loader.textContent = ""; // Clear loader text
 		displayWord(currentWord);
-		setTimeout(changeWord, 200); // Wait for 300 ms before displaying the next word
+		setTimeout(changeWord, 180); // Wait for 300 ms before displaying the next word
 	} else {
 		// All words have been displayed, fade in the main content
 		gsap.to(".preloader", {
@@ -56,4 +56,4 @@ function changeWord() {
 	}
 }
 
-setTimeout(changeWord, 500);
+setTimeout(changeWord, 400);
