@@ -1,24 +1,21 @@
 const words = [
 	"Hello",      // English
 	"নমস্কার",      // Bengali (Nomoskar)
-	"नमस्ते",       // Sanskrit (Namaste)
-	"Hola",       // Spanish
+	"নমস্কাৰ",      // Assamese (Nomoskar)
+	"ନମସ୍କାର",      // Odia (Namaskāra)
 	"안녕하세요",   // Korean
 	"こんにちは",   // Japanese
-	"నమస్కారం",   // Telugu (Namaskaram)
-	"नमस्कार",      // Marathi (Namaskār)
-	"வணக்கம்",   // Tamil (Vaṇakkam)
-	"નમસ્તે",       // Gujarati (Namaste)
-	"ನಮಸ್ಕಾರ",    // Kannada (Namaskāra)
-	"ନମସ୍କାର",      // Odia (Namaskāra)
 	"ਸਤ ਸ੍ਰੀ ਅਕਾਲ",  // Punjabi (Sat Srī Akāl)
+	"નમસ્તે",       // Gujarati (Namaste)
+	"नमस्कार",      // Marathi (Namaskār)
+	"నమస్కారం",   // Telugu (Namaskaram)
+	"வணக்கம்",   // Tamil (Vaṇakkam)
+	"ನಮಸ್ಕಾರ",    // Kannada (Namaskāra)
 	"നമസ്കാരം",  // Malayalam (Namaskāram)
-	"নমস্কাৰ",      // Assamese (Nomoskar)
 	"Bonjour",   // French
 	"Hallo",     // German
-	"Ciao",      // Italian
-	"Olá",       // Portuguese
-	"Hallå",     // Swedish
+	"Hola",       // Spanish
+	"नमस्ते",       // Sanskrit (Namaste)
 ];
 
 const bodyContent = document.querySelector("body");
