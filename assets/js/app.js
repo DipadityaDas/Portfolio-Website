@@ -42,6 +42,7 @@ function changeWord() {
 		gsap.to(".preloader", {
 			duration: .8,
 			swagger: .02,
+			top: "-100%",
 			height: "0vh",
 			ease: "Power3.easeIn"
 		}).to(

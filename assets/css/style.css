@@ -8,6 +8,7 @@
 body {
 	align-items: center;
 	justify-content: center;
+	top: 0;
 	height: 100vh;
 	color: azure;
 	background-color: #000;
@@ -41,8 +42,3 @@ body {
 	overflow: hidden;
 }
 
-/* main {
-	display: flex;
-	color: azure;
-	background-color: #000;
-} */
