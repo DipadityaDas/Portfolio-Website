@@ -5,6 +5,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
 body {
 	align-items: center;
 	justify-content: center;
@@ -12,6 +17,7 @@ body {
 	height: 100vh;
 	color: azure;
 	background-color: #000;
+	line-height: 1.5;
 }
 
 .loader {
@@ -39,4 +45,9 @@ body {
 	pointer-events: none;
 	background: linear-gradient(45deg, #d31f14, #ee4c03, #fc7621, #f08e09, #fac900, #e9da00);
 	overflow: hidden;
+}
+
+.page-wrapper {
+	padding-left: 5%;
+	padding-right: 5%;
 }
