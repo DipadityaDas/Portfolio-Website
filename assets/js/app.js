@@ -1,21 +1,21 @@
 const words = [
-	"Hello",      // English
-	"নমস্কার",      // Bengali (Nomoskar)
-	"নমস্কাৰ",      // Assamese (Nomoskar)
-	"ନମସ୍କାର",      // Odia (Namaskāra)
-	"안녕하세요",   // Korean
-	"こんにちは",   // Japanese
-	"ਸਤ ਸ੍ਰੀ ਅਕਾਲ",  // Punjabi (Sat Srī Akāl)
-	"નમસ્તે",       // Gujarati (Namaste)
-	"नमस्कार",      // Marathi (Namaskār)
-	"నమస్కారం",   // Telugu (Namaskaram)
-	"வணக்கம்",   // Tamil (Vaṇakkam)
-	"ನಮಸ್ಕಾರ",    // Kannada (Namaskāra)
-	"നമസ്കാരം",  // Malayalam (Namaskāram)
-	"Bonjour",   // French
-	"Hallo",     // German
-	"Hola",       // Spanish
-	"नमस्ते",       // Sanskrit (Namaste)
+	"Hello", // English
+	"নমস্কার", // Bengali (Nomoskar)
+	"নমস্কাৰ", // Assamese (Nomoskar)
+	"ନମସ୍କାର", // Odia (Namaskāra)
+	"안녕하세요", // Korean
+	"こんにちは", // Japanese
+	"ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi (Sat Srī Akāl)
+	"નમસ્તે", // Gujarati (Namaste)
+	"नमस्कार", // Marathi (Namaskār)
+	"నమస్కారం", // Telugu (Namaskaram)
+	"வணக்கம்", // Tamil (Vaṇakkam)
+	"ನಮಸ್ಕಾರ", // Kannada (Namaskāra)
+	"നമസ്കാരം", // Malayalam (Namaskāram)
+	"Bonjour", // French
+	"Hallo", // German
+	"Hola", // Spanish
+	"नमस्ते", // Sanskrit (Namaste)
 ];
 
 const bodyContent = document.querySelector("body");
@@ -37,20 +37,22 @@ function changeWord() {
 	} else {
 		// All words have been displayed, fade in the main content
 		gsap.to(".preloader", {
-			duration: .8,
-			swagger: .02,
+			duration: 0.8,
+			swagger: 0.02,
 			top: "-100%",
 			height: "0vh",
-			ease: "Power3.easeIn"
-		}).to(
-			"body",
-			{
-				overflow: "auto"
-			},
-			"-=2"
-		).to(".preloader", {
-			display: "none"
-		});
+			ease: "Power3.easeIn",
+		})
+			.to(
+				"body",
+				{
+					overflow: "auto",
+				},
+				"-=2"
+			)
+			.to(".preloader", {
+				display: "none",
+			});
 	}
 }
 
