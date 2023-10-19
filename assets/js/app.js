@@ -1,3 +1,8 @@
+const bodyContent = document.querySelector("body");
+const mainContent = document.querySelector("main");
+const loader = document.querySelector(".loader");
+
+/*------------------ Preloader Section ------------------*/
 const words = [
 	"Hello", // English
 	"নমস্কার", // Bengali (Nomoskar)
@@ -18,9 +23,6 @@ const words = [
 	"नमस्ते", // Sanskrit (Namaste)
 ];
 
-const bodyContent = document.querySelector("body");
-const mainContent = document.querySelector("main");
-const loader = document.querySelector(".loader");
 let currentWordIndex = 0;
 
 function displayWord(word) {

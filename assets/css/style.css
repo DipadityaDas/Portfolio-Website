@@ -8,6 +8,10 @@
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	-webkit-scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	-ms-scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +52,5 @@ body {
 }
 
 .page-wrapper {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding: 1% 5% 0% 5cqi;
 }
